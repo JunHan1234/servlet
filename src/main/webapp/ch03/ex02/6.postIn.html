@@ -1,5 +1,7 @@
-<meta charset='utf-8'/>
+<meta charset='utf-8'>
 <!-- request method가 post일때는 queryString에 parameter가 안들어감. -->
+<!-- parameter는 숨겨져있는 request body부분에 기술이 된다. -->
+<!-- 이 정보는 request header에 Content-Type으로 생긴다. -->
 <form action='6.postOut.jsp' method='post'>
 	이름: <input type='text' name='userName'/>
 	<input type='submit'/>
