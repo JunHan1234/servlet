@@ -22,29 +22,4 @@ public class GetPost extends HttpServlet {
 		out.println("<h2>" + req.getMethod() + "</h2>");
 		out.printf("<p>%d + %d = %d</p>", num1, num2, num1 + num2);
 	}
-	
-	/*
-	@Override
-	public void doGet(HttpServletRequest req, HttpServletResponse res)
-		throws ServletException, IOException {
-		doGetPost(req, res);
-	}
-	
-	@Override
-	public void doPost(HttpServletRequest req, HttpServletResponse res)
-		throws ServletException, IOException {
-		doGetPost(req, res);
-	}
-	
-	public void doGetPost(HttpServletRequest req, HttpServletResponse res)
-		throws ServletException, IOException {
-		int num1 = 1;
-		int num2 = 2;
-		
-		res.setContentType("text/html; charset=utf-8");
-		PrintWriter out = res.getWriter();
-		out.println("<h2>" + req.getMethod() + "</h2>");
-		out.printf("<p>%d + %d = %d</p>", num1, num2, num1 + num2);
-	}
-	*/
 }
