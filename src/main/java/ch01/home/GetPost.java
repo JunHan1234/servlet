@@ -16,7 +16,7 @@ public class GetPost extends HttpServlet {
 		throws ServletException, IOException {
 		int num1 = 1;
 		int num2 = 2;
-		
+		//new 로 만든적 없는 req res out 객체들을 내장객체라고 한다.
 		res.setContentType("text/html; charset=utf-8");
 		PrintWriter out = res.getWriter();
 		out.println("<h2>" + req.getMethod() + "</h2>");

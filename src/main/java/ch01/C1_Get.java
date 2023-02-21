@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 //servlet은 아래 예시로, java코드와 html코드가 섞여있는 스파게티코드 형태이기때문에 유지보수가 힘들다. =>> JSP에서 극복했다.
 
-//context pass 이후의 url을 수동으로 부여
+//context pass(http://localhost/servlet/)이후의 url을 수동으로 부여
 @WebServlet("/ch01/get/add")
 
 //servlet class 구성.

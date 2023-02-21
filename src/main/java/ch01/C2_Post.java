@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/ch01/post/add")
 public class C2_Post extends HttpServlet {
-	@Override
+	@Override //논리적이였던 req, res를 객체 생성 한 후에는 메모리상 공간을 차지하기 때문에 물리적이다.
 	public void doPost(HttpServletRequest req, HttpServletResponse res)
 		throws ServletException, IOException {
 		int num1 = 1;
