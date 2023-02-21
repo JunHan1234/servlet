@@ -11,7 +11,9 @@ import jakarta.servlet.http.HttpServletResponse;
 
 //servlet은 아래 예시로, java코드와 html코드가 섞여있는 스파게티코드 형태이기때문에 유지보수가 힘들다. =>> JSP에서 극복했다.
 
-//context pass(http://localhost/servlet/)이후의 url을 수동으로 부여
+//servlet이 자동 작성해준 url은 쓸모가 없었으므로,
+//annotation을 이용해, context pass(http://localhost/servlet/)이후의 
+//상대주소 url을 수동으로 부여
 @WebServlet("/ch01/get/add")
 
 //servlet class 구성.
@@ -28,5 +30,5 @@ public class C1_Get extends HttpServlet { //request 보내는 최종 목적지�
 		out.printf("<p>%d + %d = %d</p>", num1, num2, num1 + num2); //spaghetti code.
 	}
 }
-// http://localhost(내컴퓨터 주소, 127.0.0.1)  :80(tomcat의 주소)   /servlet(webapp의 주소, '/' = context pass)  /servlet/ch01.C1_Get
+// http://localhost(내컴퓨터 주소, 127.0.0.1)  :80(tomcat의 주소)   /servlet(webapp의 주소, '/' = context pass)  /servlet/ch01.C1_Get(tomcat이 자동으로 부여한 현재 파일의 상대주소)
 // context pass를 포함하고 있으면 절대주소, 아니면 상대주소.

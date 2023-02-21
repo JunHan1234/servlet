@@ -1,0 +1,29 @@
+<!-- 각종 parameter의 default값을 알아보자. -->
+<meta charset='utf-8'/>
+<form action='3.defaultOut.jsp'>
+	text: <input type='text' name='text'/><br>
+	number: <input type='number' name='number'/><br>
+	date: <input type='date' name='date'/><br>
+	checkbox: <input type='checkbox' name='checkbox'/><br>
+	radio: <input type='radio' name='radio'/><br>
+	<hr>
+	
+	text: <input type='text' name='text2' value='hello'/><br>
+	number: <input type='number' name='number2' value='12'/><br>
+	date: <input type='date' name='date2' value='2023-02-21'/><br>
+	checkbox: <input type='checkbox' name='checkbox2' value='apple' checked/><br>
+	radio: <input type='radio' name='radio2' value='grape' checked/><br>
+	
+	<input type='submit'/>
+</form>
+<!-- 실행결과 url의 queryString을 보면,
+?text=&number=&date= 으로, text, number, date는 empty string으로 기술되고,
+나머지 checkbox, radio는 존재조차 하지 않는다.
+
+name2로 지정한 text, number, date는 value값을 설정해주었기 때문에,
+또한, checkbox, radio도 value값을 설정하고 checked attribute를 넣어주어서,
+queryString에 기술되어 있고, parameter를 잘 불러온다.-->
+
+<!-- server와 client의 대화: queryString.
+?text=&number=&date=&text2=hello&number2=12&date2=2023-02-21&checkbox2=apple&radio2=grape
+-->
