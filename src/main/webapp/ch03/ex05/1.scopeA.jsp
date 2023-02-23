@@ -11,7 +11,7 @@
 
 <!-- 
 pageContext의 scope는 현재 페이지가 작동하는 동안이다. B로 이동하는 순간 사라짐.
-request는 client가 request 보낼때 존재하고 response를 받기 전까지 유지된다.
+request는 하나의 request작업이 동작하는 동안이다. client가 request 보낼때 존재하고 response를 받기 전까지 유지된다.
 session객체는 논리적인 연결이 존재하면 scope이 유지된다. Session을 삭제한적이 없으므로 데이터가 유지된다.
 application은 app이 실행되면 살아있고, 종료될때까지 유지된다.
 A에서 B로 이동하면서 scope이 유지되는 three four만 data가 유지. 
