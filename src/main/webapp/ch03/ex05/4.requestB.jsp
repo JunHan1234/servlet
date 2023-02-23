@@ -3,4 +3,8 @@
 <%				//return type이 object이므로 본래의 type으로 casting.
 	User user = (User)request.getAttribute("user");
 %>
+<%--
+A에서 만든 request를 받아 user객체에 저장하고,
+C페이지로 넘어간다.
+--%>
 <jsp:forward page='4.requestC.jsp'/>
