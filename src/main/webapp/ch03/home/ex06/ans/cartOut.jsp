@@ -14,7 +14,7 @@
 <%
 					for(String product: cart) {
 %>
-					<li><%= product %><input type='checkbox' name='product' value='<%= product %>'/></li>
+						<li><%= product %><input type='checkbox' name='product' value='<%= product %>'/></li>
 <%
 					}
 %>
