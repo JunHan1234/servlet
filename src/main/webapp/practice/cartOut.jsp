@@ -9,7 +9,7 @@
 		List<String> cart = (List<String>)cartObj;
 		if(cart.size() > 0) {
 %>
-			<form action='cartDelProc.jsp' method='post'>
+			<form action='cartDelProc.jsg' method='post'>
 				<ul>
 <%
 					for(String product: cart) {
