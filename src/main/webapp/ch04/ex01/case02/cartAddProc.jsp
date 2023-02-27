@@ -5,6 +5,7 @@
 	
 	//물건이 있으면 ~
 	if(products != null) {
+		//cart의 내용물 string 준비.
 		String cart = "";
 		for(String product: products) cart += product + "/";
 		

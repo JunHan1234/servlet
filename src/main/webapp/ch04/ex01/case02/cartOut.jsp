@@ -1,7 +1,7 @@
 <%@ page language='java' contentType='text/html; charset=utf-8' pageEncoding='utf-8'%>
 <%@ page import='java.util.List, java.util.ArrayList' %>
 <%@ page import='java.util.StringTokenizer' %>
-<a href='main.html'>진열대</a>
+<a href='main.html'>진열대</a> <br>
 <%
 	List<String> cart = new ArrayList<>();
 
@@ -11,7 +11,7 @@
 	for(Cookie cookie: cookies) {
 		if(cookie.getName().equals("cart")) {
 			String tmp = cookie.getValue();
-			//구분자 기준으로 string data를 쪼갠다.
+			//구분자 기준으로 string data를 쪼개 List로 return한다.
 			st = new StringTokenizer(tmp, "/");
 			//Token이 더 존재한다면 cart에 계속 더해 넣어준다.
 			while(st.hasMoreTokens())
@@ -24,7 +24,7 @@
 		<ul>
 <%
 			for(String product: cart) {
-%>		
+%>
 				<li><%= product %></li>
 <%
 			}
